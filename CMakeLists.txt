@@ -14,6 +14,10 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(Tarea1_Progra3
   main.cpp
+  user.h user.cpp
+  student.h student.cpp
+  teacher.h teacher.cpp
+  admin.h admin.cpp
 )
 target_link_libraries(Tarea1_Progra3 Qt${QT_VERSION_MAJOR}::Core)
 
