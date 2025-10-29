@@ -32,7 +32,7 @@ void Teacher::genericAction(){
 void Teacher::gradeHw(Student* u){
     if(!blocked){
         if(u != 0){
-            if(u->isGraded() || !u->isBlocked()){
+            if(!u->isGraded() && !u->isBlocked()){
                 cout << name << " Graded a Homework" << endl;
                 u->grade();
                 gradedHw++;
@@ -40,8 +40,9 @@ void Teacher::gradeHw(Student* u){
             }else{
                 cout << "Error, student is already Graded or is Blocked!" << endl;
             }
-        }
+        }else{
         cout << "Error, User doesnt exist" << endl;
+        }
     }else{
         cout << "Error, this user is blocked from any action" << endl;
     }

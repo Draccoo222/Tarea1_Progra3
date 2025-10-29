@@ -4,11 +4,13 @@
 class User
 {
     public:
+        User();
         User(std::string name, int id);
 
         int getId();
         std::string getName();
         bool isBlocked();
+        void block();
 
         virtual void getUserType() = 0;
         virtual void genericAction() = 0;

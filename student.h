@@ -12,10 +12,14 @@ class Student : public User
         void genericAction() override;
         void getUserType() override;
 
-        void matricularClase();
+        void addClass();
+        void grade();
+        bool isGraded();
 
     private:
         int credits;
+        bool graded;
+
 
 };
 

@@ -12,6 +12,11 @@ Student::Student(string name, int id): User() {
     graded = false;
 }
 
+bool Student::isGraded(){
+    return graded;
+}
+
+
 void Student::getUserType(){
     cout << "Name: " << name << " Id: " << id << endl;
     cout << "User Type: Student" << endl;
@@ -39,7 +44,7 @@ void Student::addClass(){
         if(credits > 0){
             cout << "Student " << name << " Added a new class to their schedule" << endl;
             credits--;
-            cout << "Credits Left: " << credits << credits;
+            cout << "Credits Left: " << credits << endl;
         }else{
             cout << "Error, not enough credits left to add a class!" << endl;
         }

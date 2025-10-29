@@ -18,6 +18,7 @@ add_executable(Tarea1_Progra3
   student.h student.cpp
   teacher.h teacher.cpp
   admin.h admin.cpp
+  usermanager.h usermanager.cpp
 )
 target_link_libraries(Tarea1_Progra3 Qt${QT_VERSION_MAJOR}::Core)
 

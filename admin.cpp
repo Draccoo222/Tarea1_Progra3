@@ -35,8 +35,9 @@ void Admin::blockUser(User* u){
             if(!u->isBlocked()){
                 cout << "Admin has blocked a user with the id of: " << u->getId() << endl;
                 u->block();
-            }
+            }else{
             cout << "Error, user is already blocked" << endl;
+            }
         }else{
             cout << "Error, cant block a null user" << endl;
         }
